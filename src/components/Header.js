@@ -1,13 +1,9 @@
 import './Header.css'
 import { FaReact as ReactLogo } from 'react-icons/fa'
-import { NavLink, Link, useNavigate } from 'react-router-dom'
-import useAuth from '../hooks/useAuth'
-import ButtonLoading from './ButtonLoading'
+import { NavLink, Link } from 'react-router-dom'
+import {BsCartFill}from 'react-icons/bs'
 
 const Header = () => {
-
-  const [userLogged] = useAuth()
-  const navigate = useNavigate()
 
   return (
     <header className='Header'>
@@ -15,29 +11,47 @@ const Header = () => {
         <Link to='/'>
           <div className='logotype'>
             <ReactLogo className='icon-logo'/>
-            <h1>React Tutorial - User ID: {userLogged.idUser} </h1>
+            <h1>Zustand Tutorial</h1>
           </div>
         </Link>
         <nav>
           <ul>
             <li><NavLink to='/' end>Home</NavLink></li>
-            <li><NavLink to='/contact' end>Hooks</NavLink></li>
-            {userLogged.isLogged ? (
-              <>
-                <ButtonLoading isLoading={false}>Sair</ButtonLoading>
-              </>
-            ) : (
-              <>
-                <li><NavLink to='/sign-up' end>SignUp</NavLink></li>
-                <ButtonLoading onClick={() => navigate('/login')} isLoading={false}>Login</ButtonLoading>
-              </>
-            )}
-           
+            <li><NavLink to='/persist' end>Persist</NavLink></li>
+            <li>
+              <div style={style.cartBox}>
+                <BsCartFill style={style.cart} />
+                <div style={style.badge}>4</div>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
   )
+}
+
+const style = {
+  cartBox: {
+    position: 'relative'
+  },
+  cart: {
+    width: '20px',
+    height: '20px',
+  },
+  badge: {
+    position: 'absolute',
+    background: '#ff4d00',
+    borderRadius: '50%',
+    fontSize: '0.5rem',
+    width: '15px',
+    height: '15px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    top: '-9px',
+    right: '-9px'
+  }
 }
 
 export default Header

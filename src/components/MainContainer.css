@@ -1,6 +1,7 @@
 .main-container {
     background: #FFF;
     padding: 20px 0;
+    min-height: 400px;
 }
 
 .main-container .container{

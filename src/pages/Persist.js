@@ -6,7 +6,7 @@ import MainContainer from '../components/MainContainer'
 import CardGame from '../components/CardGame'
 import games from '../database/games.json'
 
-const Home = () => {
+const Persist = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Home = () => {
     <>
       <Header />
       <MainContainer>
-        <h1>Home | Game Shop</h1>
+        <h1>Persistence in Local Storage | Game Shop</h1>
         <p>Add your favorite game to cart!</p>
         {
           isLoading
@@ -38,4 +38,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Persist

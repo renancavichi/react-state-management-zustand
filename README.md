@@ -1,10 +1,13 @@
-# Frontend React PJ3
+# React: State Management with Zustand
 
-**Autor**: Renan Cavichi
+### National Science and Technology Week in Federal Institute of Sao Paulo
 
-**Instituição**: IFSP Caraguatatuba
-**Turma**: 2022-2
+**Author**: Renan Cavichi
 
-#### Contato
+Demonstration used during the my presentation of state-management with Zustand.
+
+[Zustand](https://github.com/pmndrs/zustand)
+
+##### Keep in touch!
 
 [LinkedIn](https://br.linkedin.com/in/renancavichi)

@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "title": "The Legend Of Zelda: Breath Of The Wild",
+        "platform": "Switch",
+        "cover": "https://rihappy.vtexassets.com/arquivos/ids/4293865-1200-auto?v=637932498015570000&width=1200&height=auto&aspect=true"
+    },{
+        "id": "2",
+        "title": "Immortals Fenyx Rising",
+        "platform": "Playstation 5",
+        "cover": "https://rihappy.vtexassets.com/arquivos/ids/4811176-1200-auto?v=638004179603100000&width=1200&height=auto&aspect=true"
+    },{
+        "id": "3",
+        "title": "Ratchet & Clank",
+        "platform": "Playstation 5",
+        "cover": "https://rihappy.vtexassets.com/arquivos/ids/1385291-1200-auto?v=637565985131630000&width=1200&height=auto&aspect=true"
+    },{
+        "id": "4",
+        "title": "Super Mario Odyssey",
+        "platform": "Switch",
+        "cover": "https://rihappy.vtexassets.com/arquivos/ids/668306-1200-auto?v=637323373535670000&width=1200&height=auto&aspect=true"
+    },{
+        "id": "5",
+        "title": "Super Mario 3D World",
+        "platform": "Switch",
+        "cover": "https://rihappy.vtexassets.com/arquivos/ids/1257357-1200-auto?v=637522116151430000&width=1200&height=auto&aspect=true"
+    }
+]
