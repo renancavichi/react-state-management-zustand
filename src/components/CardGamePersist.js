@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import { BsCartPlus as EmptyCart, BsFillCartCheckFill as AddedCart } from 'react-icons/bs'
-import {useCartStore} from '../store/useCartStore'
+import {usePersistCartStore} from '../store/usePersistCartStore'
 
 
 const CardGame = ({ game, cart }) => {  
-    const addToCart = useCartStore((state) => state.addItem)
+    const addToCart = usePersistCartStore((state) => state.addItem)
     const {card, cover, box, title, text, buttonLink} = style
 
     return (

@@ -5,9 +5,11 @@ import Footer from "../components/Footer"
 import MainContainer from '../components/MainContainer'
 import CardGame from '../components/CardGame'
 import games from '../database/games.json'
+import {useCartStore} from '../store/useCartStore'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true)
+  const cartItems = useCartStore((state) => state.items)
 
   useEffect(() => {
     // fetch 
@@ -27,7 +29,7 @@ const Home = () => {
           ? <p>Loading...</p>
             : games.map((game) => {
               return (
-                <CardGame key={game.id} game={game} cart={false} />
+                <CardGame key={game.id} game={game} cart={cartItems.includes(game.id)} />
             )}
             
           )
